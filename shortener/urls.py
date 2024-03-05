@@ -22,4 +22,5 @@ from shortener.core import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('<slug:slug>', views.redirecting),
+    path('reports/<slug:slug>', views.reports),
 ]
